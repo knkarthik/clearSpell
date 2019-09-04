@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Clear Spell",
+    "slug": "clearspell",
+    "privacy": "public",
+    "sdkVersion": "34.0.0",
+    "platforms": ["ios", "android", "web"],
+    "android": {
+      "package": "com.karthik.clearspell"
+    },
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/myicon.png",
+    "splash": {
+      "resizeMode": "contain"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
