@@ -39,10 +39,12 @@ jobs:
         # the table with data, and then retrieves the data.
         run: |
           apt-get update -y && apt install postgresql-client -y
-          psql -c "SELECT version();"
+          psql -c "SELECT version();" -h postgres -p 5432
         # Environment variables used by the `client.js` script to create a new PostgreSQL table.
         env:
           # The hostname used to communicate with the PostgreSQL service container
           POSTGRES_HOST: postgres
           # The default PostgreSQL port
           POSTGRES_PORT: 5432
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_HOST_AUTH_METHOD: trust
