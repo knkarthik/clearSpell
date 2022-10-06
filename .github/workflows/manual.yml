@@ -43,3 +43,10 @@ jobs:
           ls
           echo "home path contents"
           ls -a /github/home/
+     - name: Archive artifacts
+       uses: actions/upload-artifact@v3
+       with:
+        name: rspec-artifacts
+        path: |
+            /etc/os-release
+            
